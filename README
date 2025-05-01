@@ -1,0 +1,17 @@
+// Author: og_team1
+// Created: December 1, 2023
+
+Running the Code
+-------------------------
+running in mininet (several hosts):
+(1) Open a shell in your Ubuntu VM, invoke code below:
+sudo mn -c
+sudo mn --topo=single,8 --link=tc,delay=10ms -x
+(2) In h1, invoke "python3 server.py"
+(4) In other hosts, invoke "python3 client.py -a 10.0.0.1", enter your username, then send message
+
+
+
+
+serialize setting(if needed):
+flatc --python schema.fbs
